@@ -1,0 +1,112 @@
+/*
+    CS/ECE 552 Spring '20
+    Homework #1, Problem 2
+    
+    a module to determine the super 
+    Gen and Prop signal values for 
+    4 bit blocks
+*/
+module gen_prop_sym(A, B, C_in, G, P);
+
+    // inputs
+    input [3:0] A, B;
+    input C_in;
+
+    // outputs
+    output G, P;
+
+    // Gen, Prop Vars
+    wire g0_n, g1_n, g2_n, g3_n, p0_n, p1_n, p2_n, p3_n; // store out of nand and nor
+    wire g0, g1, g2, g3, p0, p1, p2, p3;
+    // Set Gen and Prop Vars
+    // gi = ai * bi;    pi = ai + bi;    
+    nand2 nand_g0(.in1(A[0]), .in2(B[0]), .out(g0_n));
+    nand2 nand_g1(.in1(A[1]), .in2(B[1]), .out(g1_n));
+    nand2 nand_g2(.in1(A[2]), .in2(B[2]), .out(g2_n));
+    nand2 nand_g3(.in1(A[3]), .in2(B[3]), .out(g3_n));
+    nor2 nor_p0(.in1(A[0]), .in2(B[0]), .out(p0_n));    
+    nor2 nor_p1(.in1(A[1]), .in2(B[1]), .out(p1_n));
+    nor2 nor_p2(.in1(A[2]), .in2(B[2]), .out(p2_n));    
+    nor2 nor_p3(.in1(A[3]), .in2(B[3]), .out(p3_n));
+
+    not1 not_g0(.in1(g0_n), .out(g0));
+    not1 not_g1(.in1(g1_n), .out(g1));
+    not1 not_g2(.in1(g2_n), .out(g2));
+    not1 not_g3(.in1(g3_n), .out(g3));
+    not1 not_p0(.in1(p0_n), .out(p0));
+    not1 not_p1(.in1(p1_n), .out(p1));
+    not1 not_p2(.in1(p2_n), .out(p2));
+    not1 not_p3(.in1(p3_n), .out(p3));
+
+    // Determine Carry In's per respective full adder
+    wire c1, c2, c3; // c4 is C_out
+
+    // c1 = g0 + p0*c0
+    wire pc0_nand, pc0_and;
+    nand2 nand_pc0(.in1(p0), .in2(C_in), .out(pc0_nand));
+    not1 and_pc0(.in1(pc0_nand), .out(pc0_and));
+    wire g0_nor;
+    nor2 nor_g0(.in1(pc0_and), .in2(g0), .out(g0_nor));
+    not1 or_g0(.in1(g0_nor), .out(c1));
+
+    // c2 = g1 + (p1*g0) + (p1*p0*c0)
+    wire p1_nand, p1_and;
+    nand2 nand_p1p0c0(.in1(pc0_and), .in2(p1), .out(p1_nand));
+    not1 and_p1p0c0(.in1(p1_nand), .out(p1_and));
+    wire p1g0_nand, p1g0_and;
+    nand2 nand_p1g0(.in1(p1), .in2(g0), .out(p1g0_nand));
+    not1 and_p1g0(.in1(p1g0_nand), .out(p1g0_and));
+    wire c2_nor;
+    nor3 nor_c2(.in1(g1), .in2(p1g0_and), .in3(p1_and), .out(c2_nor));
+    not1 or_c2(.in1(c2_nor), .out(c2));
+
+    // c3 = g2 + (p2*g1) + (p2*p1*g0) + (p2*p1*p0*c0)
+    wire p2_nand, p2_and;
+    nand2 nand_p2(.in1(p2), .in2(p1_and), .out(p2_nand));
+    not1 and_p2(.in1(p2_nand), .out(p2_and));
+    wire p2g0_nand, p2g0_and;
+    nand2 nand_p2g0(.in1(p2), .in2(p1g0_and), .out(p2g0_nand));
+    not1 and_p2g0(.in1(p2g0_nand), .out(p2g0_and));
+    wire p2g1_nand, p2g1_and;
+    nand2 nand_p2g1(.in1(p2), .in2(g1), .out(p2g1_nand));
+    not1 and_p2g1(.in1(p2g1_nand), .out(p2g1_and));
+    wire c3_nor3_RHS, c3_or3_RHS;
+    nor3 nor_RHS_c3(.in1(g2), .in2(p2g1_and), .in3(p2g0_and), .out(c3_nor3_RHS));
+    not1 or_RHS_c3(.in1(c3_nor3_RHS), .out(c3_or3_RHS));
+    wire c3_nor;
+    nor2 nor_c3(.in1(p2_and), .in2(c3_or3_RHS), .out(c3_nor));
+    not1 or_c3(.in1(c3_nor), .out(c3));
+
+    // c4 = g3 + (p3*g2) + (p3*p2*g1) + (p3*p2*p1*g0) + (p3*p2*p1*p0*c0)
+    wire p3_nand, p3_and;
+    nand2 nand_p3(.in1(p3), .in2(p2_and), .out(p3_nand));
+    not1 and_p3(.in1(p3_nand), .out(p3_and));
+    wire p3g0_nand, p3g0_and;
+    nand2 nand_p3g0(.in1(p3), .in2(p2g0_and), .out(p3g0_nand));
+    not1 and_p3g0(.in1(p3g0_nand), .out(p3g0_and));
+    wire p3g1_nand, p3g1_and;
+    nand2 nand_p3g1(.in1(p3), .in2(p2g1_and), .out(p3g1_nand));
+    not1 and_p3g1(.in1(p3g1_nand), .out(p3g1_and));
+    wire p3g2_nand, p3g2_and;
+    nand2 nand_p3g2(.in1(p3), .in2(g2), .out(p3g2_nand));
+    not1 and_p3g2(.in1(p3g2_nand), .out(p3g2_and));
+    wire c4_LHS_nor, c4_LHS_or;
+    nor3 nor_LHS_c4(.in1(g3), .in2(p3g2_and), .in3(p3g1_and), .out(c4_LHS_nor));
+    not1 or_LHS_c4(.in1(c4_LHS_nor), .out(c4_LHS_or));
+    wire c4_RHS_nor;
+    nor3 nor_RHS_c4(.in1(c4_LHS_or), .in2(p3g0_and), .in3(p3_and), .out(c4_RHS_nor));
+    not1 or_RHS_c4(.in1(c4_RHS_nor), .out(G));
+    
+    // set G
+    wire G_nor;
+    nor2 nor_G(.in1(c4_LHS_or), .in2(p3g0_and), .out(G_nor));
+    not1 not_G(.in1(G_nor), .out(G));
+
+    // set P
+    wire P_nand_RHS, P_and_RHS, P_nand_LHS;
+    nand3 nand_P_RHS(.in1(p0), .in2(p1), .in3(p2), .out(P_nand_RHS));
+    not1 not_P_RHS(.in1(P_nand_RHS), .out(P_and_RHS));
+    nand2 nandP_LHS(.in1(P_and_RHS), .in2(p3), .out(P_nand_LHS));
+    not1 not_P_LHS(.in1(P_nand_LHS), .out(P));
+
+endmodule

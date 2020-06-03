@@ -1,0 +1,349 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/demo2/verilog
+vcache
+Z0 !s110 1587258783
+!i10b 1
+!s100 W_PXLV=SljHgf@G;jY>5Z0
+IWBYb4i_RckhP@VU[8b6mF3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog
+Z3 w1582499915
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/cache.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/cache.v
+L0 17
+Z4 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z5 !s108 1587258783.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/cache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/cache.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vclkrst
+R0
+!i10b 1
+!s100 ECO2cJg5EN7TnVjRfg9Q[1
+I5E3i594d15Y6I^DgZf[Vl3
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/clkrst.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/clkrst.v
+L0 13
+R4
+r1
+!s85 0
+31
+R5
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/clkrst.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/clkrst.v|
+!s101 -O0
+!i113 1
+R6
+vdff
+Z7 !s110 1587258786
+!i10b 1
+!s100 ocZMMJaQcW@V^7b`LBG;g2
+IP2?YBEP`Na0LmRMjJ_bDO1
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/dff.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/dff.v
+L0 6
+R4
+r1
+!s85 0
+31
+Z8 !s108 1587258786.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/dff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/dff.v|
+!s101 -O0
+!i113 1
+R6
+vdirectMap
+!s110 1587329994
+!i10b 1
+!s100 hRZ0K?_Kzg5cnE`Qc=MQ?3
+IaS6dW_R9jbb2[b?ZHlG?I0
+R1
+R2
+w1587324299
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/directMap.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/directMap.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1587329994.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/directMap.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/directMap.v|
+!s101 -O0
+!i113 1
+R6
+ndirect@map
+vfinal_memory
+Z9 !s110 1587258784
+!i10b 1
+!s100 PLMOmQHM?<Ma`Fi94[[4P2
+Ib=g;bI6bnhno9Fi5mV1M11
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/final_memory.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/final_memory.v
+L0 54
+R4
+r1
+!s85 0
+31
+R5
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/final_memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/final_memory.v|
+!s101 -O0
+!i113 1
+R6
+vfour_bank_mem
+R9
+!i10b 1
+!s100 fFjCM1aIGh`TZz:`^Id=i1
+IhE?12V_`_nP6gB14DlSX21
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/four_bank_mem.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/four_bank_mem.v
+L0 65
+R4
+r1
+!s85 0
+31
+Z10 !s108 1587258784.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/four_bank_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/four_bank_mem.v|
+!s101 -O0
+!i113 1
+R6
+vmem_system
+Z11 !s110 1587324133
+!i10b 1
+!s100 7Q]>_OCdl?<e_U:kYH86F1
+I0L35jSfNFb0NBQdPbD]Ie2
+R1
+R2
+w1587324130
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system.v
+L0 5
+R4
+r1
+!s85 0
+31
+Z12 !s108 1587324133.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system.v|
+!s101 -O0
+!i113 1
+R6
+vmem_system_hier
+R9
+!i10b 1
+!s100 SV]J3`f:TzOChGc>mObJS0
+IMn9OPTR8gTlNR9Bl=3Do]2
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_hier.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_hier.v
+L0 5
+R4
+r1
+!s85 0
+31
+R10
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_hier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_hier.v|
+!s101 -O0
+!i113 1
+R6
+vmem_system_perfbench
+R9
+!i10b 1
+!s100 BgGPg8VUBb=NTc]48Fg9J0
+I<6NU2LSJQ]=FIn9=dOe:00
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_perfbench.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_perfbench.v
+L0 7
+R4
+r1
+!s85 0
+31
+R10
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_perfbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_perfbench.v|
+!s101 -O0
+!i113 1
+R6
+vmem_system_randbench
+R9
+!i10b 1
+!s100 LNFL0hlT39KH`W20VXECi3
+I7XeOKm4RD]oOz`J4<]Ln`3
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_randbench.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_randbench.v
+L0 6
+R4
+r1
+!s85 0
+31
+R10
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_randbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_randbench.v|
+!s101 -O0
+!i113 1
+R6
+vmem_system_ref
+Z13 !s110 1587258785
+!i10b 1
+!s100 AeC5@czA[UGMTfdTRob<V0
+IjDnA`^1I6TiFO@g:@nTKl2
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_ref.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_ref.v
+L0 5
+R4
+r1
+!s85 0
+31
+Z14 !s108 1587258785.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_ref.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/mem_system_ref.v|
+!s101 -O0
+!i113 1
+R6
+vmemc
+R13
+!i10b 1
+!s100 COYIdHdN=bZYYldo0lGTO1
+I^13]@kR5aoc108e502b9e2
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memc.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memc.v
+L0 6
+R4
+r1
+!s85 0
+31
+R14
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memc.v|
+!s101 -O0
+!i113 1
+R6
+vmemv
+R13
+!i10b 1
+!s100 RPJlHojEBDMk>>f^Wz9KU0
+I9dEoASSWkJI332Gc?>zg62
+R1
+R2
+R3
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memv.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memv.v
+L0 6
+R4
+r1
+!s85 0
+31
+R14
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memv.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/memv.v|
+!s101 -O0
+!i113 1
+R6
+vnextStateFSM
+R11
+!i10b 1
+!s100 =MCM?>7jAJ`_@ADET9Wf^3
+IHRYQ^JkhzZGCJe2XjOThc1
+R1
+R2
+w1587324132
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/nextStateFSM.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/nextStateFSM.v
+L0 5
+R4
+r1
+!s85 0
+31
+R12
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/nextStateFSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/nextStateFSM.v|
+!s101 -O0
+!i113 1
+R6
+nnext@state@f@s@m
+voutputsFSM
+!s110 1587329995
+!i10b 1
+!s100 S_8i<b2?6eTRCa5gG904;1
+IMQ6F8oK6Ab`UWBc528G9X2
+R1
+R2
+w1587328216
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/outputsFSM.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/outputsFSM.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1587329995.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/outputsFSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/outputsFSM.v|
+!s101 -O0
+!i113 1
+R6
+noutputs@f@s@m
+vregister
+R7
+!i10b 1
+!s100 0<GTHi89aNZ>eh^WNTcao0
+IAa66oIn7TUC<bS:zTCFR;3
+R1
+R2
+w1582909198
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/register.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/register.v
+L0 11
+R4
+r1
+!s85 0
+31
+R8
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/project/cache/cache_direct/verilog/register.v|
+!s101 -O0
+!i113 1
+R6

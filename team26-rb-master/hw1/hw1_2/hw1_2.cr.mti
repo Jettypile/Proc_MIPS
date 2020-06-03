@@ -1,0 +1,106 @@
+{//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/cla_16b.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/cla_16b.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module cla_16b
+
+Top level modules:
+	cla_16b
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/claLogicBlock.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/claLogicBlock.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module claLogicBlock
+
+Top level modules:
+	claLogicBlock
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/genPropLogic.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/genPropLogic.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module genPropLogic
+
+Top level modules:
+	genPropLogic
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nor2.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nor2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module nor2
+
+Top level modules:
+	nor2
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nor3.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nor3.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module nor3
+
+Top level modules:
+	nor3
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/not1.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/not1.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/cla_4b.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/cla_4b.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module cla_4b
+
+Top level modules:
+	cla_4b
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/fullAdder_1b.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/fullAdder_1b.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fullAdder_1b
+
+Top level modules:
+	fullAdder_1b
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/cla_16b_bench.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/cla_16b_bench.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module cla_16b_bench
+
+Top level modules:
+	cla_16b_bench
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/clkrst.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/clkrst.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nand2.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nand2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/xor2.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/xor2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module xor2
+
+Top level modules:
+	xor2
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/xor3.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/xor3.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module xor3
+
+Top level modules:
+	xor3
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nand3.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/nand3.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module nand3
+
+Top level modules:
+	nand3
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/fullAdder_1b_bench.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/hw1/hw1/hw1_2/fullAdder_1b_bench.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fullAdder_1b_bench
+
+Top level modules:
+	fullAdder_1b_bench
+
+} {} {}}

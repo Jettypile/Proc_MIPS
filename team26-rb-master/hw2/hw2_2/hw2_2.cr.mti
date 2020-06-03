@@ -1,0 +1,22 @@
+{//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier_bench.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier_bench.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_hier_bench
+
+Top level modules:
+	alu_hier_bench
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/clkrst.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/clkrst.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier.v} {1 {vlog -work work -stats=none {//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_hier
+
+Top level modules:
+	alu_hier
+
+} {} {}}

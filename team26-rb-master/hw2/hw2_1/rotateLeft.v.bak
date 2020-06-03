@@ -1,0 +1,11 @@
+/*
+    CS/ECE 552 Spring '20
+    Homework #2, Problem 1
+    
+    A rotate left module. Rotates a given input left by
+    a specified number of bits.
+ */
+
+module rotateLeft(In, Cnt, Out);
+
+endmodule

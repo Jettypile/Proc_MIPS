@@ -1,0 +1,78 @@
+/* $Author: sinclair $ */
+/* $LastChangedDate: 2020-02-09 17:03:45 -0600 (Sun, 09 Feb 2020) $ */
+/* $Rev: 46 $ */
+module proc (/*AUTOARG*/
+   // Outputs
+   err, 
+   // Inputs
+   clk, rst
+   );
+
+   input clk;
+   input rst;
+
+   output err;
+
+   // None of the above lines can be modified
+
+   // OR all the err ouputs for every sub-module and assign it as this
+   // err output
+   
+   // As desribed in the homeworks, use the err signal to trap corner
+   // cases that you think are illegal in your statemachines
+   
+   
+   /* your code here -- should include instantiations of fetch, decode, execute, mem and wb modules */
+
+   // Intermediate Variables
+   // Fetch
+   wire [15:0] PC_add_2, instr;
+   // Decode
+   wire BorJDecode_CNTRL, BorJSel_CNTRL, HaltSel_CNTRL, writeEnDecode, writeSetInDecode, SIIC_CNTRL, RTI_CNTRL;
+   wire [15:0] ALUInA, ALUInB, writeRegDataDecode, BorJaddrDecode, memData;
+   wire [6:0] instr_op_ext;
+   wire [2:0] writeRegSelDecode;
+   // Execute
+   wire [15:0] ALU_output, JaddrExecute, writeRegDataExecute;
+   wire memWriteEn_CNTRL, memRead_CNTRL;
+   // Memory
+   wire [15:0] memDataOut;
+   // Write Back
+   wire writeRegEn;
+   wire [2:0] writeRegSel;
+   wire [15:0] writeRegData;
+
+   // Instantiate Fetch
+   fetch fetch(.clk(clk), .rst(rst), .PC_add_2(PC_add_2), .instr(instr), .BorJDecode_CNTRL(BorJDecode_CNTRL), 
+         .BorJSel_CNTRL(BorJSel_CNTRL), .HaltSel_CNTRL(HaltSel_CNTRL), .BorJaddrDecode(BorJaddrDecode), 
+         .JaddrExecute(JaddrExecute), .SIIC_CNTRL(SIIC_CNTRL), .RTI_CNTRL(RTI_CNTRL));
+   
+   // Instantiate Decode
+   decode decode(.clk(clk), .rst(rst), .err(err), .writeRegSel(writeRegSel), .writeRegData(writeRegData), 
+                      .writeRegEn(writeRegEn), .instr(instr), .PC_add_2(PC_add_2), 
+                      .BorJDecode_CNTRL(BorJDecode_CNTRL), .BorJSel_CNTRL(BorJSel_CNTRL), 
+                      .HaltSel_CNTRL(HaltSel_CNTRL), .writeEnDecode(writeEnDecode), 
+                      .writeRegDataDecode(writeRegDataDecode), .writeRegSelDecode(writeRegSelDecode),
+                      .BorJaddrDecode(BorJaddrDecode), .ALUInA(ALUInA), .ALUInB(ALUInB), 
+                      .instr_op_ext(instr_op_ext), .memData(memData), .writeSetInDecode(writeSetInDecode), 
+                      .SIIC_CNTRL(SIIC_CNTRL), .RTI_CNTRL(RTI_CNTRL));
+
+   // Instantiate Execute
+   execute execute(.ALUInA(ALUInA), .ALUInB(ALUInB), .writeSetInDecode(writeSetInDecode), 
+            .writeRegDataDecode(writeRegDataDecode), .JaddrExecute(JaddrExecute),
+            .ALU_output(ALU_output), .instr_op_ext(instr_op_ext), .memData(memData),
+            .writeRegDataExecute(writeRegDataExecute), .memWriteEn_CNTRL(memWriteEn_CNTRL),
+            .memRead_CNTRL(memRead_CNTRL));
+
+   // Instantiate Memory
+   memory memory(.clk(clk), .rst(rst), .ALU_output(ALU_output), .memData(memData), 
+           .HaltSel_CNTRL(HaltSel_CNTRL), .memWriteEn_CNTRL(memWriteEn_CNTRL), .memDataOut(memDataOut),
+           .memRead_CNTRL(memRead_CNTRL));
+
+   // Instantiate Write Back   
+   wb wb(.memDataOut(memDataOut), .writeRegDataExecute(writeRegDataExecute), .memRead_CNTRL(memRead_CNTRL), 
+       .writeRegSel(writeRegSel), .writeRegData(writeRegData), .writeRegEn(writeRegEn), 
+       .writeRegSelDecode(writeRegSelDecode), .writeEnDecode(writeEnDecode));
+
+endmodule // proc
+// DUMMY LINE FOR REV CONTROL :0:

@@ -1,0 +1,11 @@
+/*
+    CS/ECE 552 Spring '20
+    Homework #2, Problem 1
+    
+    A shift right logical module. unsigned shift a 
+    given input right by a specified number of bits.
+ */
+
+module shiftRightLogical(In, Cnt, Out);
+
+endmodule

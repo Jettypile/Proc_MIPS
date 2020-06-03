@@ -1,0 +1,64 @@
+/*
+   CS/ECE 552 Spring '20
+  
+   Filename        : forwardingLogic.v
+   Description     : This module instantiates the logic for forwarding.
+*/
+
+module forwardingLogic(XM_memRead, XM_writeEn, MW_writeEn, DX_regRs, DX_regRt, XM_regRd, MW_regRd, DX_instr_op_ext,
+                       DX_regRsData, DX_regRtData, DX_memData, XM_regRdData, MW_regRdData, DX_writeDataDecode, stall_X_FWD,
+                       regRsData, regRtData, writeDataDecode, memData);
+
+   // Module Input / Output
+   input XM_memRead, XM_writeEn, MW_writeEn;
+   input [2:0] DX_regRs, DX_regRt, XM_regRd, MW_regRd;
+   input [6:0] DX_instr_op_ext;
+   input [15:0] DX_regRsData, DX_regRtData, XM_regRdData, MW_regRdData, DX_writeDataDecode, DX_memData;
+   output stall_X_FWD;
+   output [15:0] regRsData, regRtData, writeDataDecode, memData;
+
+   // Intermediate Variables
+   reg DX_readRsReq, DX_readRtReq, DX_readRtReqMem;
+ 
+   // Read Rs Required Logic
+   always @ (*) begin
+      casex (DX_instr_op_ext[6:2])
+         5'b010xx: DX_readRsReq = 1;
+         5'b10xxx: DX_readRsReq = 1;
+         5'b11001: DX_readRsReq = 1;
+         5'b1101x: DX_readRsReq = 1;
+         5'b111xx: DX_readRsReq = 1;
+         5'b011xx: DX_readRsReq = 1;
+         5'b001x1: DX_readRsReq = 1;
+         default: DX_readRsReq = 0;
+      endcase
+   end
+   // Read Rt Required Logic
+   always @ (*) begin
+      casex (DX_instr_op_ext[6:2])
+         5'b1101x: begin DX_readRtReq = 1; DX_readRtReqMem = 0; end
+         5'b111xx: begin DX_readRtReq = 1; DX_readRtReqMem = 0; end
+         5'b10000: begin DX_readRtReq = 0; DX_readRtReqMem = 1; end
+         5'b10011: begin DX_readRtReq = 0; DX_readRtReqMem = 1; end
+         default: begin DX_readRtReq = 0; DX_readRtReqMem = 0; end
+      endcase
+   end
+
+   // Stall Condition
+   assign stall_X_FWD = ((DX_regRs === XM_regRd) & XM_writeEn & XM_memRead & DX_readRsReq) | 
+                        ((DX_regRt === XM_regRd) & XM_writeEn & XM_memRead & DX_readRtReq) ? 1 : 0; // with mem to mem fwd
+   /*assign stall_X_FWD = ((DX_regRs === XM_regRd) & XM_writeEn & XM_memRead & DX_readRsReq) | 
+                        ((DX_regRt === XM_regRd) & XM_writeEn & XM_memRead & (DX_readRtReq | DX_readRtReqMem)) ? 1 : 0;*/
+
+   assign regRsData = ((DX_regRs === XM_regRd) & XM_writeEn & ~XM_memRead & DX_readRsReq) ? XM_regRdData : 
+                     ((DX_regRs === MW_regRd) & MW_writeEn & DX_readRsReq) ? MW_regRdData : DX_regRsData;
+
+   assign regRtData = ((DX_regRt === XM_regRd) & XM_writeEn & ~XM_memRead & DX_readRtReq) ? XM_regRdData : 
+                     ((DX_regRt === MW_regRd) & MW_writeEn & DX_readRtReq) ? MW_regRdData : DX_regRtData;
+
+   assign memData = ((DX_regRt === XM_regRd) & XM_writeEn & ~XM_memRead & DX_readRtReqMem) ? XM_regRdData : 
+                     ((DX_regRt === MW_regRd) & MW_writeEn & DX_readRtReqMem) ? MW_regRdData : DX_memData;
+
+   assign writeDataDecode = (DX_instr_op_ext[6:2] === 5'b10010 & DX_readRsReq) 
+                                                   ? {regRsData[7:0], DX_writeDataDecode[7:0]} : DX_writeDataDecode;                     
+ endmodule

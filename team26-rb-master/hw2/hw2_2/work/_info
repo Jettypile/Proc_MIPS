@@ -1,0 +1,458 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_1
+valu
+!s110 1582226414
+!i10b 1
+!s100 ^e0oOaK`ORmTSWN>^JGQ_0
+IPn;RQBnP<[U9M_9I2K@C@3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 d//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2
+w1582226412
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu.v
+Z2 L0 12
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1582226414.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+valu_hier
+Z5 !s110 1582078659
+!i10b 1
+!s100 3Xb;FZ81FF_W=nXc^l5ea3
+I>fWLHXm;^Wb>c2?Ti;AYA2
+R0
+R1
+Z6 w1581999992
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z7 !s108 1582078659.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier.v|
+!s101 -O0
+!i113 1
+R4
+valu_hier_bench
+Z8 !s110 1582078660
+!i10b 1
+!s100 XFgHB^cilkRB@;<M1Vh^O1
+IVLAPEOhg``a;]ImM4;Sl03
+R0
+R1
+R6
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier_bench.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier_bench.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier_bench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/alu_hier_bench.v|
+!s101 -O0
+!i113 1
+R4
+vcla_16b
+R8
+!i10b 1
+!s100 YNdgY?h;D>g2=IV:a752`0
+I=3OaBzD5eX_UB0dhF`T9V2
+R0
+R1
+w1581618084
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_16b.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_16b.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z9 !s108 1582078660.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_16b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_16b.v|
+!s101 -O0
+!i113 1
+R4
+vcla_4b
+R8
+!i10b 1
+!s100 <NCAooHiV_A42:Si`EPL]2
+I;BKBGR[?55ooCFaO8E_:@0
+R0
+R1
+w1581617836
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_4b.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_4b.v
+L0 7
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_4b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/cla_4b.v|
+!s101 -O0
+!i113 1
+R4
+vclaLogicBlock
+Z10 !s110 1582078661
+!i10b 1
+!s100 H7S:Oml^`hc44P^:C;JTW0
+IECl3dn>e0kTI3OAz9?@jI3
+R0
+R1
+w1581618309
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/claLogicBlock.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/claLogicBlock.v
+L0 8
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/claLogicBlock.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/claLogicBlock.v|
+!s101 -O0
+!i113 1
+R4
+ncla@logic@block
+vclkrst
+R5
+!i10b 1
+!s100 :G>ohM_0fkinljT]efjn12
+If^okE=7kJ]gOK=N^;ed7g2
+R0
+R1
+R6
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/clkrst.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/clkrst.v
+R2
+R3
+r1
+!s85 0
+31
+R7
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/clkrst.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/clkrst.v|
+!s101 -O0
+!i113 1
+R4
+vfullAdder_1b
+R10
+!i10b 1
+!s100 A4?k>:]<<L?`TYni04G1H1
+I5U>Ya9X3h:`HTXb:?529f1
+R0
+R1
+w1581354428
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/fullAdder_1b.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/fullAdder_1b.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z11 !s108 1582078661.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/fullAdder_1b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/fullAdder_1b.v|
+!s101 -O0
+!i113 1
+R4
+nfull@adder_1b
+vgenPropLogic
+R10
+!i10b 1
+!s100 CKaO=UFBcbUn]4BB@4QRV2
+IcJTmgUX3D7MCIa5iig04a0
+R0
+R1
+w1581617568
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/genPropLogic.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/genPropLogic.v
+L0 7
+R3
+r1
+!s85 0
+31
+R11
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/genPropLogic.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/genPropLogic.v|
+!s101 -O0
+!i113 1
+R4
+ngen@prop@logic
+vnand2
+R10
+!i10b 1
+!s100 @JLnM_lV[dSoG<b5oFSbC0
+IjeO45`j[nEP^^RLS_?Tb;2
+R0
+R1
+w1580934801
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand2.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand2.v
+L0 7
+R3
+r1
+!s85 0
+31
+R11
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand2.v|
+!s101 -O0
+!i113 1
+R4
+vnand3
+R10
+!i10b 1
+!s100 74U72gSXNGQC9QQ_6Vl@m3
+I1i38_<R_j`W0o?gDN6Gl00
+R0
+R1
+w1580934944
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand3.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand3.v
+L0 7
+R3
+r1
+!s85 0
+31
+R11
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nand3.v|
+!s101 -O0
+!i113 1
+R4
+vnor2
+R10
+!i10b 1
+!s100 zLY;3kAfYGCBXK2?=fzNd1
+I1ZBN7jKYBZlDQ`3mM6LQR3
+R0
+R1
+w1580934796
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor2.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor2.v
+L0 7
+R3
+r1
+!s85 0
+31
+R11
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor2.v|
+!s101 -O0
+!i113 1
+R4
+vnor3
+R10
+!i10b 1
+!s100 M15<fJBSa=`jENU]=JkSO2
+Ij]3:SLbB@?o0jE98X3j]@2
+R0
+R1
+w1580934828
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor3.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor3.v
+L0 7
+R3
+r1
+!s85 0
+31
+R11
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/nor3.v|
+!s101 -O0
+!i113 1
+R4
+vnot1
+Z12 !s110 1582078662
+!i10b 1
+!s100 E;?=8[YGePDM35<9b7^jF3
+I>P<DG>Ti;zDgaAe0I<9R`2
+R0
+R1
+w1580934790
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/not1.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/not1.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z13 !s108 1582078662.000000
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/not1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/not1.v|
+!s101 -O0
+!i113 1
+R4
+vrotateLeft
+R8
+!i10b 1
+!s100 ;dh6ac82HB7iKgBM<Se2N1
+IYh_eo1M8G@DfiGZ>SDEb<1
+R0
+R1
+w1582002154
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/rotateLeft.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/rotateLeft.v
+Z14 L0 10
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/rotateLeft.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/rotateLeft.v|
+!s101 -O0
+!i113 1
+R4
+nrotate@left
+vshifter
+R8
+!i10b 1
+!s100 1UUbZSiCdC]I7<LfQ3OKK0
+IVD8976VSZkIShd@[V4X8]1
+R0
+R1
+w1582003055
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shifter.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shifter.v
+R14
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shifter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shifter.v|
+!s101 -O0
+!i113 1
+R4
+vshiftLeft
+R8
+!i10b 1
+!s100 Kb=Nndm7jbU@;NoTN1N@<3
+IJdX9o@>JJ=n1SI2WKl=:Q2
+R0
+R1
+w1582002266
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftLeft.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftLeft.v
+L0 9
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftLeft.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftLeft.v|
+!s101 -O0
+!i113 1
+R4
+nshift@left
+vshiftRightArithmetic
+R8
+!i10b 1
+!s100 ]1XD3@An>UYKXKK8JP`;J1
+IdfCQhlT8;X;SiIf8`Aa;C1
+R0
+R1
+w1582002560
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightArithmetic.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightArithmetic.v
+L0 9
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightArithmetic.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightArithmetic.v|
+!s101 -O0
+!i113 1
+R4
+nshift@right@arithmetic
+vshiftRightLogical
+R8
+!i10b 1
+!s100 5[PQ>oeB:MDAF<hlzRO682
+IjGN]36g^aSna8L9gnao5f2
+R0
+R1
+w1582002463
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightLogical.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightLogical.v
+L0 9
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightLogical.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/shiftRightLogical.v|
+!s101 -O0
+!i113 1
+R4
+nshift@right@logical
+vxor2
+R12
+!i10b 1
+!s100 14Q51T:af@fHNQedg1F<m0
+I0[zK^Vk[g]cMLBg9aTdBJ0
+R0
+R1
+w1580934824
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor2.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor2.v
+L0 7
+R3
+r1
+!s85 0
+31
+R13
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor2.v|
+!s101 -O0
+!i113 1
+R4
+vxor3
+R8
+!i10b 1
+!s100 `n11P3H6:oWD]59JZPJ[m2
+IF?XR3=C@R@;1==51I9`j?1
+R0
+R1
+w1580934771
+8//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor3.v
+F//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor3.v
+L0 7
+R3
+r1
+!s85 0
+31
+R9
+!s107 //Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//Mac/Home/Documents/Maruthi Files/Junior/Spring/ECE 552/Homework/team26-rb/hw2/hw2_2/xor3.v|
+!s101 -O0
+!i113 1
+R4

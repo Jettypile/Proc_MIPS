@@ -1,0 +1,94 @@
+/*
+   CS/ECE 552, Spring '20
+   Homework #3, Problem #1
+  
+   This module creates 8 16-bit registers.  It has 1 write port, 2 read
+   ports, 3 register select inputs, a write enable, a reset, and a clock
+   input.  All register state changes occur on the rising edge of the
+   clock. 
+*/
+module regFile (
+                // Outputs
+                read1Data, read2Data, err,
+                // Inputs
+                clk, rst, read1RegSel, read2RegSel, writeRegSel, writeData, writeEn
+                );
+
+   parameter regSize = 16; // can be modified for larger sizes   
+
+   input        clk, rst;
+   input [2:0]  read1RegSel;
+   input [2:0]  read2RegSel;
+   input [2:0]  writeRegSel;
+   input [regSize-1:0] writeData;
+   input        writeEn;
+
+   output reg [regSize-1:0] read1Data;
+   output reg [regSize-1:0] read2Data;
+   output       err;
+
+   /* YOUR CODE HERE */
+   
+   // Err intermediates
+   reg err_rs, err_rt;
+   wire err_wr;
+
+   // Reg intermediate data for read and write
+   wire [regSize-1:0] reg1_data, reg2_data, reg3_data, reg4_data;
+   wire [regSize-1:0] reg5_data, reg6_data, reg7_data, reg8_data;
+   wire [regSize-1:0] reg1_write, reg2_write, reg3_write, reg4_write;
+   wire [regSize-1:0] reg5_write, reg6_write, reg7_write, reg8_write;
+
+   /* 8 by Size - 1 Registers */ 
+   register #(regSize) reg1 (.Clk(clk), .Rst(rst), .In(reg1_write), .Out(reg1_data));
+   register #(regSize) reg2 (.Clk(clk), .Rst(rst), .In(reg2_write), .Out(reg2_data));
+   register #(regSize) reg3 (.Clk(clk), .Rst(rst), .In(reg3_write), .Out(reg3_data));
+   register #(regSize) reg4 (.Clk(clk), .Rst(rst), .In(reg4_write), .Out(reg4_data));
+   register #(regSize) reg5 (.Clk(clk), .Rst(rst), .In(reg5_write), .Out(reg5_data));
+   register #(regSize) reg6 (.Clk(clk), .Rst(rst), .In(reg6_write), .Out(reg6_data));
+   register #(regSize) reg7 (.Clk(clk), .Rst(rst), .In(reg7_write), .Out(reg7_data));
+   register #(regSize) reg8 (.Clk(clk), .Rst(rst), .In(reg8_write), .Out(reg8_data));
+
+   always @ (*) begin	
+      case(read1RegSel) // Read Rs
+	 3'b000  :  begin read1Data = reg1_data; err_rs = 0; end
+	 3'b001  :  begin read1Data = reg2_data; err_rs = 0; end
+	 3'b010  :  begin read1Data = reg3_data; err_rs = 0; end
+	 3'b011  :  begin read1Data = reg4_data; err_rs = 0; end
+	 3'b100  :  begin read1Data = reg5_data; err_rs = 0; end
+	 3'b101  :  begin read1Data = reg6_data; err_rs = 0; end
+	 3'b110  :  begin read1Data = reg7_data; err_rs = 0; end
+	 3'b111	 :  begin read1Data = reg8_data; err_rs = 0; end
+         default :  err_rs = 1;	
+      endcase
+   end
+   always @ (*) begin
+      case(read2RegSel) // Read Rt
+	   3'b000  :  begin read2Data = reg1_data; err_rt = 0; end
+	   3'b001  :  begin read2Data = reg2_data; err_rt = 0; end
+	   3'b010  :  begin read2Data = reg3_data; err_rt = 0; end
+	   3'b011  :  begin read2Data = reg4_data; err_rt = 0; end
+	   3'b100  :  begin read2Data = reg5_data; err_rt = 0; end
+	   3'b101  :  begin read2Data = reg6_data; err_rt = 0; end
+	   3'b110  :  begin read2Data = reg7_data; err_rt = 0; end
+      	   3'b111  :  begin read2Data = reg8_data; err_rt = 0; end
+	   default : err_rt = 1;	
+      endcase
+   end   
+
+   // Err for Write Select and En
+   assign err_wr = writeEn === 1'bx | (writeEn === 1'b1 & (writeRegSel[2] === 1'bx | writeRegSel[1] === 1'bx | writeRegSel[0] === 1'bx));
+
+   // Write Data Assigned
+   assign reg1_write = writeEn & ~writeRegSel[2] & ~writeRegSel[1] & ~writeRegSel[0] ? writeData : reg1_data; 
+   assign reg2_write = writeEn & ~writeRegSel[2] & ~writeRegSel[1] & writeRegSel[0] ? writeData : reg2_data; 
+   assign reg3_write = writeEn & ~writeRegSel[2] & writeRegSel[1] & ~writeRegSel[0] ? writeData : reg3_data; 
+   assign reg4_write = writeEn & ~writeRegSel[2] & writeRegSel[1] & writeRegSel[0] ? writeData : reg4_data; 
+   assign reg5_write = writeEn & writeRegSel[2] & ~writeRegSel[1] & ~writeRegSel[0] ? writeData : reg5_data; 
+   assign reg6_write = writeEn & writeRegSel[2] & ~writeRegSel[1] & writeRegSel[0] ? writeData : reg6_data; 
+   assign reg7_write = writeEn & writeRegSel[2] & writeRegSel[1] & ~writeRegSel[0] ? writeData : reg7_data;
+   assign reg8_write = writeEn & writeRegSel[2] & writeRegSel[1] & writeRegSel[0] ? writeData : reg8_data;
+
+   // Overall Error Assign
+   assign err = err_rs | err_rt | err_wr;
+endmodule

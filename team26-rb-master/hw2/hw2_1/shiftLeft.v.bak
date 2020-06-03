@@ -1,0 +1,11 @@
+/*
+    CS/ECE 552 Spring '20
+    Homework #2, Problem 1
+    
+    A shift left module. Shifts a given input left by
+    a specified number of bits.
+ */
+
+module shiftLeft(In, Cnt, Out);
+
+endmodule
