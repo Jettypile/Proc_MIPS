@@ -1,0 +1,9 @@
+# Proc_MIPS
+ECE 552 Proc for MIPS ISA
+
+IMPORTANT:
+The final project design is located in ../project/demo3/verilog
+
+Demo1 contains unpipelined processor
+Demo2 contains pipelined with Forwading and RF bypassing implemented
+Demo3 contains Demo2 + adding the implemented 2 way set associative cache + Branches in decode stage.
